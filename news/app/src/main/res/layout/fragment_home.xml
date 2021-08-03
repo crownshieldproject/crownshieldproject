@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.fragment.HomeFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:descendantFocusability="blocksDescendants"
+            >
+
+            <com.application.News.view.AutoScrollRecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rvSlideHome"
+                android:layout_marginEnd="16dp"
+                android:nestedScrollingEnabled="false"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="Recent News"
+                android:fontFamily="@font/titilliumweb_bold"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_gravity="center" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rvRecent"
+                android:layout_marginTop="16dp"
+                android:nestedScrollingEnabled="false"
+                />
+
+            <TextView
+                android:id="@+id/recentSeeAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="See All"
+                android:textColor="@color/red"
+                android:textSize="18sp"
+                android:fontFamily="@font/titilliumweb_bold"
+                android:layout_gravity="end" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="Category News"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:fontFamily="@font/titilliumweb_bold"
+                android:layout_gravity="center" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rvTrending"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="16dp"
+                android:nestedScrollingEnabled="false"
+                />
+
+            <TextView
+                android:id="@+id/trendingSeeAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="See All"
+                android:textColor="@color/red"
+                android:textSize="18sp"
+                android:fontFamily="@font/titilliumweb_bold"
+                android:layout_gravity="end" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="Videos"
+                android:fontFamily="@font/titilliumweb_bold"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_gravity="center" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rvVideo"
+                android:layout_marginTop="16dp"
+                android:nestedScrollingEnabled="false"
+                />
+
+            <TextView
+                android:id="@+id/videoSeeAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="See All"
+                android:textColor="@color/red"
+                android:textSize="18sp"
+                android:fontFamily="@font/titilliumweb_bold"
+                android:layout_gravity="end" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="Special Program"
+                android:fontFamily="@font/titilliumweb_bold"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_gravity="center" />
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rvSpl"
+                android:layout_marginTop="16dp"
+                android:nestedScrollingEnabled="false"
+                />
+
+            <TextView
+                android:id="@+id/splSeeAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="See All"
+                android:textColor="@color/red"
+                android:textSize="18sp"
+                android:fontFamily="@font/titilliumweb_bold"
+                android:layout_gravity="end" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="Advertisement"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:fontFamily="@font/titilliumweb_bold"
+                android:layout_gravity="center" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rvAds"
+                android:layout_marginTop="16dp"
+                android:nestedScrollingEnabled="false"
+                />
+
+
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:gravity="center"
+              android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+<!--        <com.agrawalsuneet.loaderspack.loaders.CurvesLoader-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            app:curves_animDuration="1000"-->
+<!--            app:curves_curveColor="@color/colorPrimary"-->
+<!--            app:curves_curveSweepAngle="160"-->
+<!--            app:curves_curveWidth="3dp"-->
+<!--            android:layout_centerInParent="true"-->
+<!--            app:curves_distanceBetweenCurves="5dp"-->
+<!--            app:curves_interpolator="@android:anim/linear_interpolator"-->
+<!--            app:curves_noOfCurves="5"-->
+<!--            app:curves_outermostCurveRadius="30dp" />-->
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/spin_kit"
+            style="@style/SpinKitView.Large.Wave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:SpinKit_Color="@color/white" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

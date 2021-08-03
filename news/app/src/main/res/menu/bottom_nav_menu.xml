@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/papular"
+        android:title="Popular"
+        android:icon="@drawable/popular"/>
+    <item
+        android:id="@+id/search"
+        android:title="Search"
+        android:icon="@drawable/search"/>
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/home"/>
+    <item
+        android:id="@+id/cate"
+        android:title="Category"
+        android:icon="@drawable/ic_category"/>
+
+    <item
+        android:id="@+id/settings"
+        android:title="Settings"
+        android:icon="@drawable/settings"/>
+</menu>

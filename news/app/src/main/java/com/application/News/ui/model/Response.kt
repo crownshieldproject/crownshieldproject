@@ -1,0 +1,16 @@
+package com.application.News.ui.model
+
+class SlideRes(var slideImg:Int, var title:String, var cate:String, var date:String)
+class RecentRes(var newsImg:Int, var title:String, var cate:String, var date:String)
+class VideoRes(var newsVideo:String, var title:String, var cate:String, var date:String,var video: Video)
+class Video(var urlVideo:String, var urlVideoLocal:String, var seekTo:Int)
+class RecentSearch(var searchName:String)
+class LogoResponse(var data:LogoData,var Message:String, var Status:String)
+class LogoData(var companyName:String, var companyLogo:String, statusId:String)
+class CategoryResponse(var data:ArrayList<CategoryData>,var Message:String, var Status:String)
+class CategoryData(var categoryId:String,var categoryName:String,var statusId:String)
+class HomeResponse(var data:HomeData,var Message:String, var Status:String)
+class HomeData(var Banner:ArrayList<BannerList>,var SpecialPrograms:ArrayList<SpecialList>,var Advertisement:ArrayList<AdsList>)
+class BannerList(var bannerId:String, var bannerImage:String)
+class SpecialList(var specialProgramId:String, var specialContent:String, var specialProgramVideo:String, var specialProgramsDate:String, var specialProgramsTime:String)
+class AdsList(var advertisementId:String, var advertisementContent:String, var advertisementImageVideo:String, var advertisementDate:String, var advertisementTime:String,var advertisementType:String)
